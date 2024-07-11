@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(200, 225, 248);
+    text-align: center;
+}
+
+/* .name{
+    height: 82vmin;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: rgb(8, 8, 57);
+}
+#name{
+    font-size: 2rem;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    border: 2px solid rgb(8, 8, 57);
+    box-shadow: 0 0 1.5rem rgb(8, 8, 57) ;
+}
+#ok{
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    background-color: rgb(8, 8, 57);
+    color: whitesmoke;
+    cursor: pointer;
+} */
+
+
+.heading{
+    background-color: rgb(8, 8, 57);
+    height: 11vmin;
+    font-family:cursive;
+    font-size: 3vmin;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 10vmin;
+    position: sticky;
+    top: 0px;
+}
+
+.choice{
+    height: 32vmin;
+    width: 32vmin;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+}
+
+img{
+    height: 30vmin;
+    width: 30vmin;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 3rem;
+    margin-top: 40px;
+}
+
+.choice:hover{
+    opacity: 100%;
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.466);
+}
+
+.score-board{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+
+}
+
+#userScore, #compScore{
+    font-size: 4rem;
+    color: rgb(8, 8, 57);
+}
+
+.msg-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#msg{
+    background-color: rgb(8, 8, 57);
+    color: whitesmoke;
+    display: inline;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#reset{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: rgb(8, 8, 57);
+    cursor: pointer;
+    background-color: whitesmoke;
+    margin-bottom: 1rem;
+}
