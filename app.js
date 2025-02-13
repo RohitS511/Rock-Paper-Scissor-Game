@@ -21,7 +21,7 @@ const genComp = () => {
 // user.innerText = userName;
 // ok.addEventListener("click", () => {
 //     userName.classList.remove(userName);
-// })
+// }) 
 
 const showWinner = (userWin, userChoice, compChoice) => {
     if (userWin) {
