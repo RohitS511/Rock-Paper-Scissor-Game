@@ -10,12 +10,23 @@ let user = document.querySelector("#user");
 let userName = document.querySelector(".name");
 let ok = document.querySelector("#ok");
 
+let userMoveHistory = [];
+
 const genComp = () => {
-    const options = ["rock","paper","scissor"];
-    //Generate random function
-    const inx = Math.floor(Math.random()*3);
-    return options[inx];
-}
+    if (userMoveHistory.length >= 2) {
+      const [lastMove, secondLastMove] = userMoveHistory.slice(-2);
+      if (lastMove === secondLastMove) {
+        // If the user repeats the same move twice, choose the winning move
+        if (lastMove === "rock") return "paper"; // Paper beats Rock
+        if (lastMove === "paper") return "scissor"; // Scissor beats Paper
+        if (lastMove === "scissor") return "rock"; // Rock beats Scissor
+      }
+    }
+    // Otherwise, choose a random move
+    const options = ["rock", "paper", "scissor"];
+    const idx = Math.floor(Math.random() * options.length);
+    return options[idx];
+  };  
 
 // let userName = prompt("Enter your name:");
 // user.innerText = userName;
@@ -42,6 +53,13 @@ const showWinner = (userWin, userChoice, compChoice) => {
 
 const playGame = (userChoice) => {
     console.log("your choice",userChoice);
+
+    userMoveHistory.push(userChoice);
+
+    if (userMoveHistory.length > 2) {
+        userMoveHistory.shift();
+    }
+
     const compChoice = genComp();
     console.log("comp choice",compChoice);
 
@@ -75,6 +93,7 @@ reset.addEventListener("click", () => {
     userScorePara.innerText = "0";
     userScore = 0;
     compScore = 0;
+    userMoveHistory = [];
     msg.innerText = "Play Your Move";
     msg.style.backgroundColor = "rgb(8, 8, 57)";
 })
