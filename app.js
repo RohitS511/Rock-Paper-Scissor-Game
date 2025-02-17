@@ -16,13 +16,12 @@ const genComp = () => {
     if (userMoveHistory.length >= 2) {
       const [lastMove, secondLastMove] = userMoveHistory.slice(-2);
       if (lastMove === secondLastMove) {
-        // If the user repeats the same move twice, choose the winning move
-        if (lastMove === "rock") return "paper"; // Paper beats Rock
-        if (lastMove === "paper") return "scissor"; // Scissor beats Paper
-        if (lastMove === "scissor") return "rock"; // Rock beats Scissor
+        if (lastMove === "rock") return "paper"; 
+        if (lastMove === "paper") return "scissor";
+        if (lastMove === "scissor") return "rock"; 
       }
     }
-    // Otherwise, choose a random move
+    
     const options = ["rock", "paper", "scissor"];
     const idx = Math.floor(Math.random() * options.length);
     return options[idx];

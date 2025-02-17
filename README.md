@@ -1,16 +1,16 @@
 
-# Rock Paper Scissors Game
+# Rock Paper Scissors: The AI Opponent
 
 ## Description
 
-This is a simple Rock Paper Scissors game built using HTML, CSS, and JavaScript. The user can play against the computer, and the score is tracked for both the user and the computer.
+This is a simple Rock Paper Scissors game built using HTML, CSS, and JavaScript. The user can play against the computer, and the score is tracked for both the user and the computer. The game features a responsive design and an AI strategy where the computer adapts its moves based on the user's consecutive choices.
 
 ## Features
 
-- User can choose Rock, Paper, or Scissors.
-- # Strategy -  The computer randomly selects Rock, Paper, or Scissors.
-- The game declares a winner for each round and updates the score.
-- The game can be reset at any time.
+- User Choice: User can choose Rock, Paper, or Scissors.
+- Computer Strategy: The computer selects moves based on the user's consecutive choices. If the user repeats a move twice, the computer chooses the winning move against that choice; otherwise, it selects a random move.
+- Score Tracking: The game declares a winner for each round and updates the score.
+- Reset Option: The game can be reset at any time to start fresh.
 
 ## Technologies Used
 
