@@ -39,6 +39,7 @@ body{
 .heading{
     background-color: rgb(8, 8, 57);
     height: 11vmin;
+    z-index: 10;
     font-family:cursive;
     font-size: 3vmin;
     color: whitesmoke;
@@ -121,4 +122,25 @@ img{
     cursor: pointer;
     background-color: whitesmoke;
     margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .choice {
+        height: 18vmin;
+        width: 18vmin;
+    }
+    .container {
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .choice {
+        height: 12vmin;
+        width: 12vmin;
+    }
+    .container {
+        flex-direction: column;
+    }
 }
