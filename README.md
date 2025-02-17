@@ -8,7 +8,7 @@ This is a simple Rock Paper Scissors game built using HTML, CSS, and JavaScript.
 ## Features
 
 - User can choose Rock, Paper, or Scissors.
-- The computer randomly selects Rock, Paper, or Scissors.
+- # Strategy -  The computer randomly selects Rock, Paper, or Scissors.
 - The game declares a winner for each round and updates the score.
 - The game can be reset at any time.
 
